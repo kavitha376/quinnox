@@ -1,0 +1,4 @@
+INDEX VERSION 1.4+E:\Quinnox\spring-boot-crud\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+4258587852.index
+826973041.index
+1734729001.index
