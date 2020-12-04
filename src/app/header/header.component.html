@@ -1,0 +1,157 @@
+<!-- <nav class="navbar navbar-expand-lg navbar-dark bg-dark"> -->
+  <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+    <a class="navbar-brand"  href="home"><h2>Quinnox Loans</h2></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav  active">
+        
+        <li class="nav-iteam active">
+          <a class="nav-link" routerLink="home">HOME</a>
+        </li>
+                  
+        
+          
+        <li class="nav-item active">
+          <a class="nav-link" routerLink="news">NEWS</a>
+        </li>&nbsp;
+        <li class="nav-item active">
+          <a class="nav-link" routerLink="service">SERVICE</a>
+        </li>&nbsp;
+        
+        <li class="nav-item active">
+
+            <a class="nav-link"routerLink="about">ABOUTUS</a>
+          </li>
+          &nbsp;
+          <li class="navbar-nav active">
+            <a class="nav-link" routerLink="contact">CONTACTUS</a>
+          </li>&nbsp;
+         
+          
+          <li class="nav-item active" *ngIf='isAdmin()'>
+            <a class="nav-link" routerLink="addLoantype">ADDLOANS</a>
+           </li>
+           
+           <li class="nav-item active" *ngIf='isAdmin()' >
+            <a class="nav-link" routerLink="form">FORMSTATUS</a>
+          </li>
+        
+          <li class="nav-item active" *ngIf='isAdmin()' >
+            <a class="nav-link" routerLink="admin">UPDATE</a>
+          </li>
+           <li class="nav-item active"  *ngIf='isCustomer()'>
+            <a class="nav-link" routerLink="search">SEARCHLOANS</a>
+          </li>
+          <li class="nav-item active"  *ngIf='isCustomer()' >
+            <a class="nav-link" routerLink="form">FORMSTATUS</a>
+          </li>
+          <li class="nav-item active" *ngIf= 'isCustomer()'>
+            <a class="nav-link" routerLink="makeloan">MAKELOANS</a>
+          </li>
+          <li class="nav-item active"  *ngIf='isLad()' >
+            <a class="nav-link" routerLink="search">LOANSTYPES</a>
+          </li>
+         
+          <!-- <li class="nav-item active" *ngIf='isCustomer()'>
+            <a class="nav-link" routerLink="change">CHANGEPASSWORD</a>
+           </li> -->
+         
+         
+          <li class="nav-item active" *ngIf='isLad()'>
+            <a class="nav-link" routerLink="viewstatus">REQUESTS</a>
+          </li>
+          <li class="nav-item active" *ngIf='isLad()'>
+            <a class="nav-link" routerLink="customerdetails">DETAILS</a>
+          </li>
+          <li class="nav-item active"   *ngIf='isLad()'>
+            <a class="nav-link" routerLink="form">FORMSTATUS</a>
+          </li>
+          <!-- <li class="nav-item active"  *ngIf='isAdmin()' >
+            <a class="nav-link" routerLink="view">ViewLoans</a>
+          </li>&nbsp;:&nbsp; -->
+          
+         
+          &nbsp;
+        
+          </ul>
+          <ul class="navbar-nav ml-auto" >
+
+            <li class="nav-item active">
+              <a class="nav-link" routerLink="register">REGISTER</a>
+             </li>
+            <li class="nav-item active" *ngIf='!isLoggedIn()'>
+            <a class="nav-link" routerLink="login">
+              
+           <!-- <img src="img_avatar.png" alt="Avatar" style="width:40px">  -->
+              <img src="https://s3.eu-central-1.amazonaws.com/bootstrapbaymisc/blog/24_days_bootstrap/fox.jpg" style="width:30px">
+           <!-- Login -->
+           </a>
+           <li>
+            <li class="nav-item active" *ngIf='isLoggedIn()'>
+              <a class="nav-link" (click)='logout()' >
+                
+              <!-- <img src="img_avatar.png" alt="Avatar" style="width:30px"> -->
+                <img src="https://s3.eu-central-1.amazonaws.com/bootstrapbaymisc/blog/24_days_bootstrap/fox.jpg" style="width:30px" >
+             Logout </a>
+             <li>
+            <!-- <li class="nav-item" *ngIf='isLoggedIn()'>
+              <button class="btn btn-outline-primary float-right" type="submit" (click)='logout()'>Logout</button>
+          </li> -->
+            
+
+
+         
+
+      </ul>
+    </div>
+  </nav>
+ 
+  <router-outlet></router-outlet>
+<br>
+<br>
+
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<footer class="section footer-classic context-dark bg-image" style="background: #2d3246;">
+        <div class="container">
+          <div class="row row-30">
+            <div class="col-md-4 col-xl-5">
+              <!-- <div class="pr-xl-4"><a class="brand" href=""><img class="" src="" alt="" width="140" height="37" srcset="images/agency/logo-retina-inverse-280x74.png 2x"></a> -->
+                <p>We are an award-winning creative agency, dedicated to the best result in web design, promotion, business consulting, and marketing.</p>
+                <!-- Rights-->
+                <p class="rights"><span>©  </span><span class="copyright-year">2020</span><span> </span><span>Waves</span><span>. </span><span>All Rights Reserved.</span></p>
+              <!-- </div> -->
+            </div>
+            <div class="col-md-4">
+              <h5>Contacts</h5>
+              <dl class="contact-list">
+                <dt>Address:</dt>
+                <dd>yelhanaka newtown banglore</dd>
+                <dt>email:</dt>
+                <dd><a href="mailto:#">kavitha@gmail.com</a></dd>
+              </dl>
+            
+            </div>
+            <div class="col-md-4 col-xl-3">
+              <h5>Links</h5>
+              <ul class="nav-list">
+                
+                <li><a href="#">Projects</a></li>
+             
+                <li><a href="#">Contacts</a></li>
+               
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="row no-gutters social-container">
+          <div class="col"><a class="social-inner" href="#"><span class="icon mdi mdi-facebook"></span><span>facebook</span></a></div>
+          <div class="col"><a class="social-inner" href="#"><span class="icon mdi mdi-instagram"></span><span>instagram</span></a></div>
+          <div class="col"><a class="social-inner" href="#"><span class="icon mdi mdi-twitter"></span><span>twitter</span></a></div>
+          <div class="col"><a class="social-inner" href="#"><span class="icon mdi mdi-youtube-play"></span><span>google</span></a></div>
+        </div>
+      </footer>

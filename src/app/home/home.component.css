@@ -1,0 +1,56 @@
+/* .container {
+    position: relative;
+    font-family: Arial;
+  }
+  
+  .text-block {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: black;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+  } */
+  /* * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial;
+    font-size: 17px;
+    
+      margin: 0;
+      padding: 1px;
+       background-image: url("https://cdn.pixabay.com/photo/2017/09/07/08/54/money-2724241__340.jpg");
+      height: 100vh;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+     
+  }
+  
+  .container {
+    position: relative;
+    max-width: 1320px;
+    margin: 0 auto;
+  }
+  
+  .container img {vertical-align: middle;}
+  
+  .container .content {
+    position: sticky;
+    bottom: 0;
+    background: rgb(0, 0, 0); /* Fallback color */
+    /* background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+    /* color: #f1f1f1;
+    width: 100%;
+    padding: 0px;
+  } */
+
+  /* .centered {
+    position: absolute;
+    top: 15%;
+    left: 10%;
+    transform: translate(-50%, -50%); */
+  /* } */ 

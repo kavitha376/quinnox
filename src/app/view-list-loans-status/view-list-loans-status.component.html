@@ -1,0 +1,33 @@
+<div class="bg-img">
+
+    <div class="container">
+        <h4 style="text-align: center;">{{msg}}</h4>
+            <h1 class="mt-8" style="font-family: fantasy; color: red; text-align: center;   background-color: seashell; float:center;" >Request books</h1><br>
+            <h4 style="text-align: center;color: red;">{{msg}}</h4>
+       
+            <table class="table mt-5">
+            <thead class="thead-inverse bg-light">
+                    
+            <tr class="float-center">
+            
+                <th >User Id</th>
+                <th>applicationId</th>
+                <!-- <th>loanStatus</th> -->
+                <th>Accept</th>
+                <th>Delete</th>
+                
+            </tr>
+            </thead>
+            <tbody class="bg-light">
+                <tr *ngFor='let reqs of loanReques'>
+                    <td>{{reqs.id}}</td>
+                    <td>{{reqs.applicationId}}</td>
+                    <!-- <td>{{reqs.loanStatus}}</td> -->
+                    
+                </tr>
+                
+            </tbody>
+    </table>
+    </div>
+    
+    </div>

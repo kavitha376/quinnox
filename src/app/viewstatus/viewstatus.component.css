@@ -1,0 +1,13 @@
+body {
+    font-family: Arial;
+    font-size: 17px;
+    
+      margin: 0;
+      padding: 1px;
+         background-image: url("https://media.istockphoto.com/photos/happy-old-couple-clients-make-financial-deal-handshake-meeting-lawyer-picture-id1164377564?b=1&k=6&m=1164377564&s=170667a&w=0&h=5cH-FocbgOHSKynwovEFgoD6VN75u_d2337DedUNcDM=");
+      height: 100vh;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+     
+  }

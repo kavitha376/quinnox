@@ -1,0 +1,13 @@
+body {
+    font-family: Arial;
+    font-size: 17px;
+    
+      margin: 0;
+      padding: 1px;
+         background-image: url("https://media.istockphoto.com/photos/sign-here-please-picture-id1072035844?b=1&k=6&m=1072035844&s=170667a&w=0&h=sjKGiSPnHIU1HfbUSxaqyPphF8J9sx5owLg1Yoxa2O8=");
+      height: 100vh;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+     
+  }

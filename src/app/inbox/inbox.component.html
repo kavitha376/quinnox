@@ -1,0 +1,33 @@
+
+<h4 style="text-align: center; color: red;">*Inbox messages*</h4>
+<div class="col-md-6 mt-5 offset-3 card card-body">
+    <h4 class="text-center text-success bg-dark" *ngIf="message">{{message}}</h4>
+    <h3 class="text-center text-dark bg-danger"> compose message</h3>
+    <form action="" #form="ngForm" (ngSubmit)="addProduct(form)">
+        <div class="form-group">
+            FROM<input type="text" name="from" id="from" #TO="ngModel" placeholder="kavitha@123 " ngModel class="form-control" required>
+             
+             </div>
+         
+        <div class="form-group">
+           TO <input type="text" name="TO" id="TO" #TO="ngModel" placeholder="compose mail to " ngModel class="form-control" required>
+            
+            </div>
+        
+            <div class="form-group">
+               SUbject <input type="Text" name="Subject" id="Subject" #Subject="ngModel" placeholder="Enter the subject" ngModel class="form-control" required>
+                
+            </div>
+            <div class="form-group">
+               Description <textarea rows="4" cols="88" placeholder="write here.................">
+                   
+                </textarea>
+            </div> 
+        
+       
+        <div class="form-group">
+            <button type="submit" class="btn btn-outline-success float-right" >Send</button>
+        </div>
+
+    </form>
+</div>

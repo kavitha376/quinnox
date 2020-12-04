@@ -1,0 +1,60 @@
+<head>
+
+    <!-- <script>
+
+     document.getElementById("toggle").style.visibility="hidden";
+   </script> -->
+
+</head>
+<body>
+<div class="bg-img">
+
+    <div class="container  float-center">
+
+        <br>
+        <br>
+        <br>
+        <h4 style="text-align: center;">{{message}}</h4>
+            <!-- <h1 class="mt-6" style="font-family: fantasy; color: red; text-align: center;   background-color: white; float:center;" >Request Loans</h1><br> -->
+            <!-- <h4 style="text-align: center;color: red;">{{message}}</h4> -->
+             <h1 style="text-align: center;color: black;background-color: white;" class="mt-5 mb-5 col-md-5 offset-2">Request Loans</h1>
+            <table class=" mt-5 mb-5 col-md-5 offset-2">
+                <!-- <table class=" table-bordered table-hover " > -->
+	
+            <thead class="thead-inverse bg-light">
+                     
+            <tr class="float-center">
+            
+        
+                <th style="text-align: center;">APPLICATION ID</th>
+               
+              
+                <th>ACCEPT</th>
+                <th>DECLINE</th>
+            </tr>
+            </thead>
+            <tbody class="bg-light float-center">
+                <tr *ngFor="let loan of Loans.customer">
+                  
+
+                    
+                  
+                    <td style="text-align: center;" *ngIf="loan.status !== 'Accepted' && loan.status !== 'Rejected' "  >{{loan.applicationId}}</td>
+                    
+                    
+                    
+                     
+                        <td><button class="btn btn-primary" *ngIf="loan.status !== 'Accepted' && loan.status !== 'Rejected' "  (click)='acceptReq(loan.applicationId)'>Accept</button></td> 
+                     
+                   
+                        <td><button class="btn btn-danger" *ngIf="loan.status !== 'Accepted' && loan.status !== 'Rejected' "  (click)='decline(loan.applicationId)'>Decline</button></td>
+                </tr>
+                <!-- <tr *ngFor="let loan of Loans.formstatus">
+              <td  *ngIf="loan.status==='Accepted'">{{loan.applicationId}} </td>
+            </tr> -->
+            </tbody>
+    </table>
+    </div>
+    
+    </div>
+</body>

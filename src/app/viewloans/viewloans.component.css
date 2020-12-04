@@ -1,0 +1,13 @@
+body {
+    font-family: Arial;
+    font-size: 17px;
+    
+      margin: 0;
+      padding: 1px;
+         background-image: url("https://media.istockphoto.com/photos/happy-couple-using-laptop-with-their-insurance-agent-in-the-office-picture-id1162280946?b=1&k=6&m=1162280946&s=170667a&w=0&h=mfyBo0bdCeCAdHsGQeNZbJ0htW2N92r7NJrpdPlS4bU=");
+      height: 100vh;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+     
+  }

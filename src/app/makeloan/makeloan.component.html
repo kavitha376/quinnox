@@ -1,0 +1,165 @@
+<br>
+<br>
+
+<!-- <div class="jumbotron jumbotron-sm" style="margin-top: 5px;"></div> -->
+  <!-- <div class="container">
+      <div class="row">
+          <div class="mr-10">
+              <h3 style="color:royalblue; text-align:center;">
+                   CUSTOMER APPLICATION FORM <small></small></h3>
+          </div>
+      </div>
+  </div> -->
+<!-- </div> -->
+<!-- <div class="card " style="width:800px;text-align: center ;"> -->
+  <!-- <div class="card-body"> -->
+
+   <br>
+   <br>
+   <br> 
+   <div class="ex1">
+  <h3 style="color:royalblue; text-align:center;">CUSTOMER APPLICATION FORM </h3>
+                  </div>   
+                  <br>
+                  <br>
+<div class="container">
+  <div class="row">
+      <div class="col-md-12">
+          <div class="" >
+            <form action="/action_page.php" #form="ngForm" (ngSubmit)="SendRequest(form)">
+   
+              <div class="form-row">
+                  <div class="col-md-12">
+                          <div class="form-row">
+                            <div class="form-group col-md-5">
+                              <label> Customer Name</label>
+                              <input type="text" name="customerName" id="customerName" #customerName="ngModel" placeholder="Enter Customer Name" ngModel class="form-control" required>
+                               <div *ngIf="customerName.touched && customerName.invalid">
+                                <p class="text-danger" *ngIf="customerName.errors.required">*This Field is Required</p>
+                                 </div>
+                              
+                            </div>
+                            <div class="form-group col-md-5" style="padding-left: 30px;">
+                              <label for="inputPassword4">Phone Number</label>
+                             
+                                <input type="number"   pattern="[0-9]" onKeyPress="if(this.value.length==10) return false;" name="customerPhoneNo" id="customerPhoneNo"  #customerPhoneNo="ngModel"  placeholder="Enter customerPhoneNo" ngModel class="form-control" required>
+                                <div *ngIf="customerPhoneNo.touched && customerPhoneNo.invalid">
+                                    <p class="text-danger" *ngIf="customerPhoneNo.errors.required">*This Field is Required</p>
+                                </div>
+                            </div>
+
+                          </div>
+                          <div class="form-group col-md-5" style="padding-left: 5px;">
+                              <label for="inputPassword4"> Customer Email</label>
+                             
+                                <input type="text" name="email" id="email" #email="ngModel"  placeholder="Enter email" ngModel class="form-control" required>
+                                <div *ngIf="email.touched && email.invalid">
+                                    <p class="text-danger" *ngIf="email.errors.required">* This Field is Required</p>
+                                </div>
+                            </div>
+                            
+                            <div class="form-row">
+                            <div class="form-group col-md-5">
+                              <label>DateOfBirth</label>
+                              <input type="date" name="dateOfBirth" id="dateOfBirth" #dateOfBirth="ngModel" placeholder="Enter dob" ngModel class="form-control" required>
+                              <div *ngIf="dateOfBirth.touched && dateOfBirth.invalid">
+                                  <p class="text-danger" *ngIf="dateOfBirth.errors.required">* This Field is Required</p>
+                              </div>
+                            </div>
+                            <div class="form-group col-md-5">
+                              <label>Gender</label>
+                              <input type="text" name="gender" id="gender" #gender="ngModel" placeholder="Enter gender" ngModel class="form-control" required>
+                              <div *ngIf="gender.touched && gender.invalid">
+                                  <p class="text-danger" *ngIf="gender.errors.required">* This Field is Required</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="form-row">
+                            <div class="form-group col-md-5">
+                              <label>Occupation</label>
+                              <input type="text" name="occupation" id="occupation" #occupation="ngModel" placeholder="Enter occupation" ngModel class="form-control" required>
+                              <div *ngIf="occupation.touched && occupation.invalid">
+                                  <p class="text-danger" *ngIf="occupation.errors.required">* This Field is Required</p>
+                              </div>
+                            </div>
+                           <div class="form-group col-md-5">
+                              <label>Annual Income</label>
+                              <input type="number" name="annualIncome" id="annualIncome" #annualIncome="ngModel" placeholder="Enter annualIncome" ngModel class="form-control" required>
+                                 <div *ngIf="annualIncome.touched && annualIncome.invalid">
+                                  <p class="text-danger" *ngIf="annualIncome.errors.required">* This Field is Required</p>
+                      </div>
+                            </div>
+                          </div>
+                            <div class="form-group col-md-5 " style="padding-left: 5px;">
+                              <label for="exampleInputEmail1">Address</label>
+                              <input type="text" name="address" id="address" #address="ngModel" placeholder="Enter address" ngModel class="form-control" required>
+                              <div *ngIf="address.touched &&address.invalid">
+                                  <p class="text-danger" *ngIf="address.errors.required">* This Field is Required</p>
+                              </div>
+                            </div>
+                            <div class="form-row">
+                            <div class="form-group col-md-5">
+                              <label>Assurer Name</label>
+                              <input type="text" name="assurerName" id="assurerName" #assurerName="ngModel" placeholder="Enter assurer Name" ngModel class="form-control" required>
+                              <div *ngIf="assurerName.touched &&assurerName.invalid">
+                                  <p class="text-danger" *ngIf="assurerName.errors.required">* This Field is Required</p>
+                              </div>
+                          </div>
+                          <div class="form-group col-md-5">
+                            <label>Assurer Contact</label>
+                            <input type="number"   pattern="[0-9]" onKeyPress="if(this.value.length==10) return false;" name="assurerContactNumber" id="assurerContactNumber"  #assurerContactNumber="ngModel" placeholder="Enter assurer ContactNumber" ngModel class="form-control" required>
+                              <div *ngIf="assurerContactNumber.touched && assurerContactNumber.invalid">
+                              <p class="text-danger" *ngIf="assurerContactNumber.errors.required">* This Field is Required</p>
+                           </div>
+                        </div>
+                      </div>
+
+                      
+                            <div class="form-group col-md-5"  style="padding-left: 5px;">
+                              <label for="inputAddress">Assurer Address</label>
+                              <input type="text" name="assurerAddress" id=" assurerAddress" #assurerAddress="ngModel" placeholder="Enter  assurer Address" ngModel class="form-control" required>
+                                <div *ngIf="assurerAddress.touched &&  assurerAddress.invalid">
+                               <p class="text-danger" *ngIf="assurerAddress.errors.required">* This Field is Required</p>
+                                </div>
+                                
+                            </div>
+                      
+                      
+                            <div class="form-row">
+                              <div class="form-group col-md-5">
+                              <label for="inputAddress2">loanType</label>
+                              <input type="text" name="loanType" id="loanType" #loanType="ngModel" placeholder="Enter  loanType" ngModel class="form-control" required>
+                              <div *ngIf="loanType.touched && loanType.invalid">
+                                  <p class="text-danger" *ngIf="loanType.errors.required">* This Field is Required</p>
+                              </div>
+                            </div>
+                            <div class="form-group col-md-5">
+                              <label>Loan Amount</label>
+                              <input type="number" name="loanAmount" id="loanAmount" #loanAmount="ngModel" placeholder="Enter  loanAmount" ngModel class="form-control" required>
+                              <div *ngIf="loanAmount.touched && loanAmount.invalid">
+                             <p class="text-danger" *ngIf="loanAmount.errors.required">* This Field is Required</p>
+                            </div>
+                            </div>
+                            </div>
+                           
+                              
+                           
+                            
+                           
+                            <p>&nbsp;</p>
+                            
+                            <button type="reset" class="btn btn-danger float-right ml-3">RESET</button>
+                          
+                            <button type="submit" class="btn btn-primary float-right" >SUBMIT</button>
+                            <!-- [disabled]="form.invalid" -->
+                        
+                      </div>
+                      </div>
+
+              </form>
+          </div>
+      </div>
+     
+</div>
+<!-- </div>
+</div> -->

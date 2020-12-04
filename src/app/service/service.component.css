@@ -1,0 +1,16 @@
+.diagonal {
+	width: 200px;
+	height: 40px;
+	background-color:ivory;
+	transform: skewX(30deg);
+	transform-origin: top;
+	margin: 10px;
+	/* Zentriert den Inhalt */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.diagonal > span {
+	transform: skewX(-30deg);
+}

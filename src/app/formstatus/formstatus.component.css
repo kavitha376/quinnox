@@ -1,0 +1,13 @@
+body {
+   font-family: Arial;
+   font-size: 17px;
+   
+     margin: 0;
+     padding: 1px;
+        background-image: url("https://media.istockphoto.com/photos/group-of-people-having-meeting-and-disscusing-picture-id1212754341?b=1&k=6&m=1212754341&s=170667a&w=0&h=8EfURAUl_QXxxTG1ZUtwRsmoS_cf9L2rt8Am3Kl3EwI=");
+     height: 100vh;
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+    
+ }

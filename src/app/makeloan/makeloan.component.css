@@ -1,0 +1,52 @@
+body {
+    margin: 0;
+    padding: 0;
+    /* background-color: pink; */
+    /* background-image: url("data:image/jpeg;base64,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"); */
+   /* background-image: url("https://media.istockphoto.com/photos/stacked-credit-cards-picture-id1203764101?s=170x170"); */
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-i; */
+  }
+
+  input {
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: groove;
+    background-color:white;
+  }
+  .no-outline:focus {
+    outline: none;
+  }
+
+  #foo{
+
+
+    margin-top: 50px; 
+    
+    
+    }
+
+
+
+    .footer {
+        background: #195c7d;
+        padding-top: 10px;
+    }
+
+   
+
+
+
+.footer_widget p ,ul {
+
+color: rgb(242, 245, 245);
+
+
+
+
+
+    }
